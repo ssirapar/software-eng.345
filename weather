@@ -1,0 +1,23 @@
+# Stage 1: Hardcoding Variables
+
+# Quadratic equation: ax^2 + bx + c = 0
+a = 1
+b = -3
+c = 2
+
+# Quadratic solution using the quadratic formula
+def quadratic_solver(a, b, c):
+    discriminant = b**2 - 4*a*c
+    if discriminant >= 0:
+        x1 = (-b + (discriminant)**0.5) / (2*a)
+        x2 = (-b - (discriminant)**0.5) / (2*a)
+        return x1, x2
+    else:
+        return None
+
+# Calculate and print the solutions
+solutions = quadratic_solver(a, b, c)
+if solutions:
+    print("Quadratic Solutions:", solutions)
+else:
+    print("No real solutions.")
