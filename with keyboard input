@@ -1,0 +1,13 @@
+# Stage 2: Keyboard Input
+
+# Get coefficients from the user
+a = float(input("Enter the coefficient a: "))
+b = float(input("Enter the coefficient b: "))
+c = float(input("Enter the coefficient c: "))
+
+# Calculate and print the solutions
+solutions = quadratic_solver(a, b, c)
+if solutions:
+    print("Quadratic Solutions:", solutions)
+else:
+    print("No real solutions.")
